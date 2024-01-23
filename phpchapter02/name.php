@@ -1,8 +1,8 @@
 <?php
   // Slide 6
   // get the data from the request
-  $first_name = $_GET['first_name'];
-  $last_name = $_GET['last_name'];
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
 ?>
 <html>
   <head>
