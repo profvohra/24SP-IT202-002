@@ -1,11 +1,9 @@
 <?php
-  print_r($_POST);
+  // print_r($_POST);
   // Slide 44
   // get the data from the form
   $product_description = filter_input(INPUT_POST, 'product_description');
   $list_price = filter_input(INPUT_POST, 'list_price');
-  echo $list_price;
-  echo "<br>";
   $discount_percent = filter_input(INPUT_POST, 'discount_percent');
 
   // calculate the discount and discounted price
