@@ -1,0 +1,57 @@
+h1, h2, body {
+  font-family: Georgia, Cambria, 'Times New Roman', serif;
+  background-color: #b6c2d9;
+}
+/* Slide 8/9 */
+#first {
+  background-color: #5b8bb4;
+}
+.details {
+  background-color: #9e90a2;
+}
+img {
+  float: left;
+  margin-right: 1em;
+}
+a[href] {
+  font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
+}
+/* unvisited link */
+a:link {
+  color: #272932;
+}
+/* mouse over link */
+a:focus, a:hover {
+  color: #828489;
+}
+/* selected link */
+a:active {
+  color: #5b8bb4;
+}
+/* visited link */
+a:visited {
+  color: #9e90a2;
+}
+body {
+  border: 3px dotted #828489;
+  margin: 10px;
+}
+main {
+  border: 2px solid #5b8bb4;
+  width: 750px;
+  margin: 20px;
+  padding: 10px;
+}
+h1, p {
+  border: 1px dashed #9e90a2;
+  padding: 10px;
+}
+h1, h2 {
+  margin: .5em 0 .25em;
+  padding-left: 15px;
+}
+p {
+  margin: 0;
+  width: 725px;
+  padding-left: 15px;
+}
