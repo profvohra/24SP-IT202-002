@@ -23,6 +23,11 @@ $queryAllCategories = 'SELECT * FROM categories
 $statement2 = $db->prepare($queryAllCategories);
 $statement2->execute();
 $categories = $statement2->fetchAll();
+// DEBUGGING ONLY
+echo "<pre>";
+print_r($categories);
+echo "</pre>";
+// DEBUGGING ONLY
 $statement2->closeCursor();
 
 // Get products for selected category
