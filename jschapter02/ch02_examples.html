@@ -1,0 +1,74 @@
+<html>
+  <body>
+    <h1>JavaScript Chapter 2 Examples</h1>
+    <noscript>
+      <h2>Please enable JavaScript in your browser.</h2>
+    </noscript>
+    <script>
+      // write text to the body of our page
+      document.write("JavaScript is enabled.<br>");     
+      // Slide 26
+      let name = "Joseph"; // string value of "Joseph"
+      console.log("name = " + name);
+      let age = 50; // integer value of 50
+      age = age + 1;
+      age += 1;
+      age++;
+      console.log("age = " + age);
+      // Slide 27
+      const count = 1;
+      console.log("count = " + count);
+//      count = count + 1;
+      // Slide 29
+      console.log("variable1 = " + variable1);
+      var variable1 = "value";
+      console.log("variable1 = " + variable1); 
+      // using let?
+      //console.log("variable2 = " + variable2);
+      let variable2 = "value2";
+      console.log("variable2 = " + variable2);
+      // Slide 34
+      const width = 4.25;
+      document.write("width = " + width);
+      document.write("<br>");
+      const length = 8.5;
+      document.write("length = " + length);
+      document.write("<br>");
+      const perimeter = (2 * width) + (2 * length);
+      document.write("perimeter = " + perimeter);
+      document.write("<br>");
+      // Slide 37
+      const subtotal = 74.95;
+      const salesTax = subtotal * .1;
+      console.log(salesTax);
+      console.log(salesTax.toFixed(14));
+      console.log(parseFloat( salesTax.toFixed(14) ));
+      // Slide 40
+      const firstName = "Grace";
+      const lastName = "Hopper";
+      // with the + operator
+      const name1 = lastName + ", " + firstName;
+      document.write(name1);
+      document.write("<br>");
+      // with template literal
+      const name2 = `${lastName}, ${firstName}`;
+      document.write(name2);
+      document.write("<br>");
+      // Slide 47
+      window.alert("This is a test of the alert method.");
+      // Slide 48
+      const userEntry = window.prompt("This is a test of the prompt method", 100);
+      console.log("userEntry = " + userEntry);
+      console.log(window.location);
+      alert(window.location);
+      // Slide 51
+      let entry = prompt("Enter any value", 123.456);
+      entry = parseInt(entry);
+      alert(entry);
+      // Slide 53
+      const today = new Date();
+      document.write(today.toDateString());
+    </script>
+
+  </body>
+</html>
