@@ -12,7 +12,7 @@
         const ageValue = document.querySelector("#age").value;
         const age = parseInt(ageValue);
         if (isNaN(age) || age <= 0) {
-          document.write("Age is invalid.");
+          alert("Age is invalid.");
           // don't allow form to be submitted
           event.preventDefault();
         }
