@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <h1>Check Age</h1>
+    <form action="process.php" method="get">
+      <input type="text" id="age" name="age" />
+      <input type="submit" id="submit_button" />
+    </form>
+    <script>
+      // Slide 45
+      // arrow-function called when submit-button is selected
+      const submitAge = event => {
+        const ageValue = document.querySelector("#age").value;
+        const age = parseInt(ageValue);
+        if (isNaN(age) || age <= 0) {
+          document.write("Age is invalid.");
+          // don't allow form to be submitted
+          event.preventDefault();
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+        document.querySelector("#submit_button").addEventListener(
+          "click", submitAge);
+
+      });
+    </script>
+  </body>
+</html>

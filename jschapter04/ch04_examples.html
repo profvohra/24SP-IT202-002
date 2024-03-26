@@ -1,0 +1,89 @@
+<html>
+  <body>
+    <script>
+      // Slide 9
+      const confirmDelete = confirm("Are you sure you want to delete this item?");
+      if(confirmDelete) {
+        console.log(confirmDelete);
+        // code that deletes the item
+      }
+    </script>
+    <!-- Slide 12 -->
+    <h4>Change the color to the first p element:</h4>
+    <p>This is a paragraph element.</p>
+    <p>Change the color of the element with id="rate"</p>
+    <p id="rate">This is a paragraph with id="rate"</p>
+    <p class="error">This would be an error with class="error"</p>
+    <script>
+      // Slide 12
+      document.querySelector("p").style.color = "green";
+      document.querySelector("#rate").style.color = "blue";
+      document.querySelector(".error").style.color = "red";
+
+      const nodeList = document.querySelectorAll("p");
+      for( let index = 0; index < nodeList.length; index++) {
+        nodeList[index].style.backgroundColor = "yellow";
+      }
+      // Slide 21
+      const today = new Date();
+      document.write( today.toDateString() );
+      document.write("<br>");
+      document.write( today.getFullYear() );
+      document.write("<br>");
+      document.write( today.getDate() );
+      document.write("<br>");
+      // Slide 25
+      // function declaration example
+      function showYear() {
+        const today = new Date();
+        document.write( today.getFullYear() );
+        document.write("<br>");
+      }
+      // call/invoke the showYear function
+      showYear();
+      // Slide 31
+      // function expression example
+      const calculateTax = function(subtotal, taxRate) {
+        const tax = subtotal * taxRate;
+        return tax.toFixed(2);
+      }
+      // call/invoke the calculateTax function
+      const subtotal = 85.00;
+      const taxRate = 0.05;
+      const salesTax = calculateTax(subtotal, taxRate);
+      document.write("The sales tax is " + salesTax);
+      document.write("<br>");
+      // Slide 33
+      // arrow function example
+      const calculateTaxAgain = subtotal => (subtotal * 0.074).toFixed(2);
+      // call/invoke the calculateTaxAgain function
+      const anotherSalesTax = calculateTaxAgain(70);
+      document.write("The sales tax is " + anotherSalesTax);
+      document.write("<br>");
+      // another arrow function example
+      const getCurrentUrl = () => document.location.href;
+      // call/invoke the getCurrentUrl function
+      const url = getCurrentUrl();
+      console.log("url = " + url);
+      // Slide 36
+      // variable scope
+      function local() {
+        // for-loop using 'var' keyword
+        for(var index = 0; index < 5; index++) {
+          console.log("index = " + index);
+        }
+        // display variable 'index' OUTSIDE of for-loop
+        console.log("after for-loop index = " + index);
+
+        // for-loop using 'let' keyword
+        for(let counter = 0; counter < 5; counter++) {
+          console.log("counter = " + counter);
+        }
+        // display variable 'counter' OUTSIDE of for-loop ?
+        // No, gives 'ReferenceError'
+        console.log("after for-loop counter = " + counter);
+      }
+      local();
+    </script>
+  </body>
+</html>
